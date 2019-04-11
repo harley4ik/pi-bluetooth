@@ -1,8 +1,8 @@
 [Unit]
 Description=Configure Bluetooth Modems connected by UART
 ConditionFileNotEmpty=/proc/device-tree/soc/gpio@7e200000/bt_pins/brcm,pins
-Requires=dev-serial1.device
-After=dev-serial1.device
+Requires=sys-devices-platform-soc-3f201000.serial-tty-ttyAMA0.device
+After=sys-devices-platform-soc-3f201000.serial-tty-ttyAMA0.device
 
 [Service]
 Type=forking
